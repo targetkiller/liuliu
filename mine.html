@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>溜溜</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav bar-mine">
+      <a class="icon icon-email pull-left"></a>
+      <h1 class="title">我的</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+      <div class="mine-head">
+        <img src="img/mine-head.png" />
+      </div>
+      <ul class="home-list">
+        <li class="home-item"><img src="img/homelist.png" /></li>
+        <li class="home-item"><img src="img/homelist.png" /></li>
+      </ul>
+    </div>
+
+
+    <nav class="bar bar-tab">
+       <!-- data-transition="slide-in" -->
+    <a class="tab-item" href="index.html" data-ignore="push">
+      <span class="icon icon-home"></span>
+      <!-- <span class="tab-label">首页</span> -->
+    </a>
+    <a class="tab-item" href="walk.html" data-ignore="push">
+      <span class="icon icon-walk"></span>
+      <!-- <span class="tab-label">一起溜</span> -->
+    </a>
+    <a class="tab-item" href="find.html" data-ignore="push">
+      <span class="icon icon-find"></span>
+      <!-- <span class="tab-label">发现</span> -->
+    </a>
+    <a class="tab-item active" href="mine.html" data-ignore="push">
+      <span class="icon icon-mine"></span>
+      <!-- <span class="tab-label">我的</span> -->
+    </a>
+  </nav>
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.min.js"></script>
+  </body>
+</html>

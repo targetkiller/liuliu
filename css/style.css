@@ -1,0 +1,314 @@
+/*
+ * @content:溜溜app;
+ * @arthur:tqtan;
+ * @date:20141229;
+*/
+.hide{display: none!important;}
+
+.bar{background-color: #f76d43;}
+.title{color: #fff}
+.walk-bg .walk-dialog .close,
+.icon{-webkit-tap-highlight-color:rgba(0,0,0,0.4);}
+.bar-home .title{text-indent: -9999px;background-image: url(../img/logo-home.png);width: 75px;height: 25px;background-size: 75px 25px;top: 9px;left: 50%;
+	-webkit-transform:translate3D(-50%,0,0);transform:translate3D(-50%,0,0);}
+.bar-mine .title{text-indent: -9999px;background-image: url(../img/logo-mine.png);width: 75px;height: 25px;background-size: 75px 25px;top: 9px;left: 50%;
+	-webkit-transform:translate3D(-50%,0,0);transform:translate3D(-50%,0,0);}
+.bar-walk .title{text-indent: -9999px;background-image: url(../img/logo-walk.png);width: 100px;height: 25px;background-size: 100px 25px;top: 9px;left: 50%;
+	-webkit-transform:translate3D(-50%,0,0);transform:translate3D(-50%,0,0);}
+.bar .icon-list{background-image: url(../img/icon-list.png);width: 25px;height: 25px;background-size: 25px 25px;top: 9px;left: 13px;}
+.bar .icon-list:before{content: '';}
+.bar .icon-photoback{background-image: url(../img/icon-photoback.png);width: 25px;height: 25px;background-size: 25px 25px;top: 9px;left: 13px;}
+.bar .icon-email{background-image: url(../img/icon-email.png);width: 25px;height: 25px;background-size: 25px 25px;top: 9px;left: 13px;}
+.bar .icon-record{background-image: url(../img/icon-record.png);width: 25px;height: 25px;background-size: 25px 25px;top: 9px;left: 13px;}
+.bar .icon-shoot{background-image: url(../img/icon-shoot.png);width: 25px;height: 25px;background-size: 25px 25px;top: 9px;right: 13px;}
+.bar .icon-photogo{background-image: url(../img/icon-photogo.png);width: 50px;height: 25px;background-size: 50px 25px;top: 9px;right: 5px;}
+.bar .icon-photoshare{background-image: url(../img/icon-photoshare.png);width: 50px;height: 25px;background-size: 50px 25px;top: 9px;right: 5px;}
+.bar .icon-pause{background-image: url(../img/icon-pause.png);width: 25px;height: 25px;background-size: 25px 25px;top: 9px;right: 13px;}
+.bar .icon-pause:before{content: '';}
+
+.bar-tab{
+	height: 90px;
+	background-color: transparent;border: none;box-shadow: none;
+    background-image: -webkit-linear-gradient(top,rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%);                                                                                                                                                            
+    background-image: linear-gradient(top,rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%);
+}
+.bar-tab .tab-item.active{
+	-webkit-animation:tabActive ease-in-out .5s 1 0s forwards;
+}
+@-webkit-keyframes tabActive{
+    0%{
+        -webkit-transform:translate3D(0,0,0);
+    }
+    60%{
+        -webkit-transform:translate3D(0,-20px,0);
+    }
+    70%{
+        -webkit-transform:translate3D(0,5px,0);
+    }
+    80%{
+        -webkit-transform:translate3D(0,-5px,0);
+    }
+    90%{
+        -webkit-transform:translate3D(0,5px,0);
+    }
+    100%{
+        -webkit-transform:translate3D(0,0px,0);
+    }
+}
+.bar-tab .tab-item .icon{width: 65px;height: 65px;}
+.bar-tab .icon-home{background-image: url(../img/icon-home.png);width: 65px;height: 65px;background-size: 65px 65px;}
+.bar-tab .icon-home:before{content: '';}
+.bar-tab .icon-walk{background-image: url(../img/icon-walk.png);width: 65px;height: 65px;background-size: 65px 65px;}
+.bar-tab .icon-find{background-image: url(../img/icon-find.png);width: 65px;height: 65px;background-size: 65px 65px;}
+.bar-tab .icon-mine{background-image: url(../img/icon-mine.png);width: 65px;height: 65px;background-size: 65px 65px;}
+
+/*主页*/
+.home-list{padding: 0;margin: 0;}
+.home-item{display: block;list-style-type: none;}
+.home-item img{width: 100%;height: auto;display: block;}
+
+/*拍照*/
+.bar-photo{background-color: #000;}
+.bar-photo .icon-close{color: #fff;}
+.bar-photo .title{color: #fff;font-weight: normal;font-size: 18px;}
+#photo-send .content,
+#photo-effect .content,
+#photo .content{background-color: #000;width: 100%;height: 100%;position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+#photo-send .content{background-color: #ebebeb;}
+.photo-wrap{width: 100%;}
+.photo-wrap img{width: 100%;height: auto;display: block;}
+.photo-opt{position: relative;}
+.photo-opt .photo-btn{background-image: url(../img/photo-btn.png);width: 75px;height: 75px;background-size: 75px 75px;
+    position: absolute;top: 50%;left: 50%;-webkit-transform:translate3D(-50%,-50%,0);transform:translate3D(-50%,-50%,0);}
+.photo-opt .photo-mark1,
+.photo-opt .photo-mark2,
+.photo-opt .photo-mark3{width: 86px;height: 123px;background-size: 86px 123px;
+    position: absolute;top: 50%;-webkit-transform:translate3D(-50%,-50%,0);transform:translate3D(-50%,-50%,0);}
+.photo-opt .photo-mark1{background-image: url(../img/photo-mark1.png);left: 20%;}
+.photo-opt .photo-mark2{background-image: url(../img/photo-mark2.png);left: 50%;}
+.photo-opt .photo-mark3{background-image: url(../img/photo-mark3.png);left: 80%;}
+.icon-photomark{position: absolute;top: 30px;right: 50px;width: 114px;height: 116px;background-size: 114px 116px;background-image: url(../img/icon-photomark.png);}
+.photosend-bg{width: 100%;height: auto;display: block;}
+#photo .bar,
+#photo-effect .bar,
+#photo-send .bar{position: absolute;}
+
+/*一起逛*/
+.walk-bg{background-image: url(../img/walk-bg.png);width: 100%;height: 100%;position: absolute;top: 0;left: 0;right: 0;bottom: 0;
+background-size: 375px 598px;background-position: center;}
+.walk-bg .user{position: absolute;}
+.walk-bg .user .avatar{width: 46px;height: 51px;background-size: 46px 51px;margin-bottom: 6px;}
+.walk-bg .user .arrow{width: 15px;height: 22px;background-size: 15px 22px;left: 16px;position: absolute;}
+.walk-bg .user1{top: 80px;left: 50px;}
+.walk-bg .user2{top: 100px;left: 110px;}
+.walk-bg .user3{top: 35%;left: 65%;-webkit-transform:translate3D(-50%,-50%,0);transform:translate3D(-50%,-50%,0);}
+.walk-bg .user4{bottom: 150px;left: 50px;}
+.walk-bg .userme{top: 50%;left: 50%;-webkit-transform:translate3D(-50%,-50%,0);transform:translate3D(-50%,-50%,0);}
+.walk-bg .user1 .avatar{background-image: url(../img/user1.png);}
+.walk-bg .user2 .avatar{background-image: url(../img/user2.png);}
+.walk-bg .user3 .avatar{background-image: url(../img/user3.png);}
+.walk-bg .user4 .avatar{background-image: url(../img/user4.png);}
+.walk-bg .userme .avatar{background-image: url(../img/userme.png);}
+.walk-bg .userme.active .avatar{background-image: url(../img/userme-active.png);}
+.walk-bg .user1 .arrow{background-image: url(../img/arrow1.png);}
+.walk-bg .user2 .arrow{background-image: url(../img/arrow2.png);}
+.walk-bg .user3 .arrow{background-image: url(../img/arrow3.png);}
+.walk-bg .user4 .arrow{background-image: url(../img/arrow4.png);}
+.walk-bg .userme .arrow{background-image: url(../img/arrowme.png);}
+.walk-bg .userme.active .arrow{background-image: url(../img/arrowme-active.png);}
+.walk-bg .walk-adr{background-image: url(../img/walk-adr.png);width: 85px;height: 50px;background-size: 85px 50px;
+	position: absolute;top: -53px;right: 22px;opacity: 0;}
+.walk-bg .walk-adr.active{
+	-webkit-animation:walkadr ease-in .3s 1 forwards;
+}
+@-webkit-keyframes walkadr{
+    0%{
+        -webkit-transform:translate3D(0,20px,0) scale(1);
+        opacity: 0;
+    }
+    90%{
+        -webkit-transform:translate3D(0,5px,0) scale(1.02);
+        opacity: 1;
+    }
+    100%{
+        -webkit-transform:translate3D(0,0,0) scale(1);
+        opacity: 1;
+    }
+}
+.walk-bg .walk-add{background-image: url(../img/walk-add.png);width: 155px;height: 46px;background-size: 155px 46px;
+	position: absolute;bottom: 130px;left: 50%;-webkit-transform:translate3D(-50%,0,0);transform:translate3D(-50%,0,0);}
+.walk-bg .find-circle{width: 177px;height: 177px;background-color: rgba(247,109,67,0.3);border-radius: 9999px;z-index: -1;position: absolute;top: 50%;left: 50%;
+	-webkit-transform:translate3D(-50%,-50%,0) scale(0);
+	transform:translate3D(-50%,-50%,0) scale(0);}
+.walk-bg .find-circle.active{
+	-webkit-animation:findcircle ease-in 3.5s 1 .5s forwards;
+}
+.walk-bg .walk-dialog{width: 300px;height: 390px;background-image: url(../img/walk-dialog.png);background-size: 300px 390px;position: absolute;left: 50%;top: 50%;
+	-webkit-transform:translate3d(-50%,-50%,0);transform:translate3d(-50%,-50%,0);}
+.walk-bg .walk-dialog .close{width: 220px;height: 49px;position: absolute;top: 296px;left: 41px;}
+@-webkit-keyframes findcircle{
+    0%{
+        -webkit-transform:translate3D(-50%,-50%,0) scale(.6);
+        opacity: 1;
+    }
+    20%{
+        -webkit-transform:translate3D(-50%,-50%,0) scale(1);
+        opacity: 0;
+    }
+    21%{
+        -webkit-transform:translate3D(-50%,-50%,0) scale(.6);
+        opacity: 0;
+    }
+    29%{opacity: 0;}
+    30%{
+        -webkit-transform:translate3D(-50%,-50%,0) scale(.6);
+        opacity: 1;
+    }
+    50%{
+        -webkit-transform:translate3D(-50%,-50%,0) scale(1);
+        opacity: 0;
+    }
+    60%,100%{
+        -webkit-transform:translate3D(-50%,-50%,0) scale(1);
+    	opacity: 1;
+    }
+}
+
+.walk-bg .user1 .arrow{
+	-webkit-animation:user1 ease 5s infinite;
+	transform-origin:50% 31.8%;
+}
+.walk-bg .user2 .arrow{
+	-webkit-animation:user2 ease 15s infinite;
+	transform-origin:50% 31.8%;
+}
+.walk-bg .user3 .arrow{
+	-webkit-animation:user3 ease 8s infinite;
+	transform-origin:50% 31.8%;
+}
+.walk-bg .user4 .arrow{
+	-webkit-animation:user4 ease 10s infinite;
+	transform-origin:50% 31.8%;
+}
+
+.walk-bg .userme .arrow{
+	-webkit-animation:userme ease 8s infinite;
+	transform-origin:50% 31.8%;
+}
+
+@-webkit-keyframes user1{
+    0%{
+        -webkit-transform:rotate(0deg);
+    }
+    30%{
+        -webkit-transform:rotate(60deg);
+    }
+    50%{
+        -webkit-transform:rotate(20deg);
+    }
+    70%{
+        -webkit-transform:rotate(-30deg);
+    }
+    85%{
+        -webkit-transform:rotate(15deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+    }
+}
+
+@-webkit-keyframes user2{
+    0%{
+        -webkit-transform:rotate(0deg);
+    }
+    30%{
+        -webkit-transform:rotate(120deg);
+    }
+    50%{
+        -webkit-transform:rotate(50deg);
+    }
+    70%{
+        -webkit-transform:rotate(-10deg);
+    }
+    85%{
+        -webkit-transform:rotate(65deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+    }
+}
+
+@-webkit-keyframes user3{
+    0%{
+        -webkit-transform:rotate(0deg);
+    }
+    30%{
+        -webkit-transform:rotate(93deg);
+    }
+    50%{
+        -webkit-transform:rotate(23deg);
+    }
+    70%{
+        -webkit-transform:rotate(-75deg);
+    }
+    85%{
+        -webkit-transform:rotate(50deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+    }
+}
+
+@-webkit-keyframes user4{
+    0%{
+        -webkit-transform:rotate(0deg);
+    }
+    30%{
+        -webkit-transform:rotate(190deg);
+    }
+    50%{
+        -webkit-transform:rotate(90deg);
+    }
+    70%{
+        -webkit-transform:rotate(0deg);
+    }
+    85%{
+        -webkit-transform:rotate(-75deg);
+    }
+    100%{
+        -webkit-transform:rotate(0deg);
+    }
+}
+
+
+@-webkit-keyframes userme{
+    0%{
+        -webkit-transform:rotate(180deg);
+    }
+    30%{
+        -webkit-transform:rotate(100deg);
+    }
+    50%{
+        -webkit-transform:rotate(170deg);
+    }
+    70%{
+        -webkit-transform:rotate(230deg);
+    }
+    85%{
+        -webkit-transform:rotate(295deg);
+    }
+    95%{
+        -webkit-transform:rotate(225deg);
+    }
+    100%{
+        -webkit-transform:rotate(180deg);
+    }
+}
+
+/*我的*/
+.mine-head{width: 100%;height: auto;}
+.mine-head img{width: 100%;height: auto;display: block;}
+
+/*翻页动画*/
+.page{-webkit-transition:all ease-in .3s;transition:all ease-in .3s;}
+.page-animate{position: fixed;top: -100%;width: 100%;height: 100%;}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>溜溜</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+    <section class="page hide" id="photo">
+      <header class="bar bar-nav bar-photo">
+        <a class="icon icon-close pull-left"></a>
+        <h1 class="title">拍照</h1>
+      </header>
+
+      <div class="content">
+          <div class="photo-wrap">
+            <img src="img/photo-img.png" />
+          </div>
+          <div class="photo-opt">
+            <a href="javascript:;" class="photo-btn"></a>
+          </div>
+      </div>
+    </section>
+
+    <section class="page hide" id="photo-effect">
+      <header class="bar bar-nav bar-photo">
+        <a class="icon icon-photoback pull-left"></a>
+        <h1 class="title">选择泡泡</h1>
+        <a class="icon icon-photogo pull-right"></a>
+      </header>
+
+      <div class="content">
+          <div class="photo-wrap">
+            <img src="img/photo-img.png" />
+            <i class="icon-photomark"></i>
+          </div>
+          <div class="photo-opt">
+            <a href="javascript:;" class="photo-mark1"></a>
+            <a href="javascript:;" class="photo-mark2"></a>
+            <a href="javascript:;" class="photo-mark3"></a>
+          </div>
+      </div>
+    </section>
+
+    <section class="page" id="photo-send">
+      <header class="bar bar-nav">
+        <a class="icon icon-photoback pull-left"></a>
+        <h1 class="title">发布</h1>
+        <a class="icon icon-photoshare pull-right"></a>
+      </header>
+
+      <div class="content">
+        <img src="img/photosend-bg.png" class="photosend-bg" />
+      </div>
+    </section>
+
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/zepto.js"></script>
+    <script src="js/zepto.fix.js"></script>
+    <script src="js/zepto.touch.js"></script>
+    <script type="text/javascript">
+      var bh = $(window).height();
+      var bw = $(window).width();
+      var photoOptHeight = bh - bw - 44;
+      $('.photo-opt').css('height',photoOptHeight);
+    </script>
+  </body>
+</html>
